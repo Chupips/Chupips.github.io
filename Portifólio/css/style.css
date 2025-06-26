@@ -1,0 +1,175 @@
+/* css/style.css - Paleta 3: A Fase Madura (Abbey Road / Apple) */
+
+/* Comentário: Estilos Gerais e Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F5F5DC; /* Branco Envelhecido */
+    color: #444444; /* Cinza Asfalto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    color: #1E3A8A; /* Azul Jeans */
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Comentário: Estilos do Cabeçalho e Navegação ATUALIZADOS */
+header {
+    background-color: #444444; /* Cinza Asfalto */
+    border-bottom: 5px solid #8DB600; /* Verde Maçã (Apple) */
+    
+    /* --- MUDANÇAS APLICADAS AQUI --- */
+    display: flex; /* Ativa o layout flexível */
+    justify-content: space-between; /* Empurra o título para a esquerda e a nav para a direita */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 1rem 5%; /* Adiciona espaçamento nas laterais */
+}
+
+/* --- MUDANÇAS APLICADAS AQUI --- */
+header h1 {
+    color: #FFFFFF; /* Cor Branca */
+    font-size: 1.8rem; /* Fonte menor, conforme solicitado */
+    margin: 0; /* Remove a margem para alinhar corretamente */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #F5F5DC; /* Branco Envelhecido */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8DB600; /* Verde Maçã (Apple) */
+}
+
+/* Comentário: Estilos do Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1E3A8A; /* Azul Jeans */
+    color: #F5F5DC; /* Branco Envelhecido */
+    width: 100%;
+}
+
+/* Comentário: Estilos Específicos das Páginas */
+
+/* Página Inicial */
+.hero {
+    text-align: center;
+}
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border: 5px solid #1E3A8A; /* Azul Jeans */
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: #6F4E37; /* Marrom Terra */
+}
+.intro-text {
+    max-width: 800px;
+    margin: 1rem auto;
+    background-color: #fafadd;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #8DB600; /* Verde Maçã (Apple) */
+}
+
+/* Página de História */
+.content-image {
+    max-width: 300px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 3px solid #6F4E37; /* Marrom Terra */
+}
+article {
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+aside {
+    background-color: #f0f0e6;
+    border-left: 5px solid #8DB600; /* Verde Maçã (Apple) */
+    padding: 15px;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+aside h4 {
+    color: #1E3A8A; /* Azul Jeans */
+}
+
+/* Página de Discografia e Participantes (Galeria) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid #8DB600; /* Verde Maçã (Apple) */
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.card figcaption h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #1E3A8A; /* Azul Jeans */
+}
+.card figcaption p {
+    color: #666;
+    margin-bottom: 0;
+}
